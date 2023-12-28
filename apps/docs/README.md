@@ -75,7 +75,7 @@ You have now successfully edited and submitted changes to our documentation site
 3. You should now be able to view the page you have created. Remember when renaming the document to put .mdx at the end of the file name.
 4. From here make the changes you wish to make. Such as creating a title, sub-title and body text.
 5. At the bottom of the screen will be a 'Propose Changes' box, fill in all the relevant details such as title and description then press the green 'Propose Changes' button.
-6. Your changes have been saved, to submit them for review, located on your screen, press the greem 'Create Pull Request' button.
+6. Your changes have been saved, to submit them for review, located on your screen, press the green 'Create Pull Request' button.
 7. Fill in all the relevant details such as title and description and after finalize the submission.
 
 You have now successfully created and submitted changes to our documentation site.
