@@ -59,7 +59,7 @@ export interface App {
   isGlobal?: boolean;
   /** A contact email, mainly to ask for support */
   email: string;
-  /** Add this value as a posible location option in event types */
+  /** Add this value as a possible location option in event types */
   locationType?: LocationType;
   /** If the app adds a location, how should it be displayed? */
   locationLabel?: string;
