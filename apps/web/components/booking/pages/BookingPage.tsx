@@ -68,7 +68,7 @@ type BookingFormValues = {
   locationType?: LocationType;
   guests?: string[];
   phone?: string;
-  hostPhoneNumber?: string; // Maybe come up with a better way to name this to distingish between two types of phone numbers
+  hostPhoneNumber?: string; // Maybe come up with a better way to name this to distinguish between two types of phone numbers
   customInputs?: {
     [key: string]: string | boolean;
   };
