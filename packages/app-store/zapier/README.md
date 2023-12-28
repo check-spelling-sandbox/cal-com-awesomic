@@ -58,7 +58,7 @@ Create the other two triggers (booking rescheduled, booking cancelled) exactly l
 
 ### Set ZAPIER_INVITE_LINK
 
-The invite link can be found under under Manage → Sharing.
+The invite link can be found under Manage → Sharing.
 
 ## Localhost
 
