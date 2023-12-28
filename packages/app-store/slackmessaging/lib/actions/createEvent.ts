@@ -19,7 +19,7 @@ export default async function createEvent(req: NextApiRequest, res: NextApiRespo
     },
     response_url,
   } = JSON.parse(req.body.payload);
-  // This is a mess I have no idea why slack makes getting infomation this hard.
+  // This is a mess I have no idea why slack makes getting information this hard.
   const {
     eventName: {
       event_name: { value: selected_name },
