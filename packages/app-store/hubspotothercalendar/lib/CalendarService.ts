@@ -222,7 +222,7 @@ export default class HubspotOtherCalendarService implements Calendar {
         this.log.debug("contact:search:notAll", { event, contacts });
         const existingContacts = contacts.map((contact) => contact.properties.email);
         this.log.debug("contact:filter:existing", { existingContacts });
-        // Get non existing contacts filtering out existing from attendees
+        // Get nonexistent contacts filtering out existing from attendees
         const nonExistingContacts = event.attendees.filter(
           (attendee) => !existingContacts.includes(attendee.email)
         );
