@@ -2254,7 +2254,7 @@ export const getServerSideProps = async (context: GetServerSidePropsContext) => 
       })
     : [];
 
-  // Find the current users memebership so we can check role to enable/disable deletion.
+  // Find the current users membership so we can check role to enable/disable deletion.
   // Sets to null if no membership is found - this must mean we are in a none team event type
   const currentUserMembership =
     eventTypeObject.team?.members.find((el) => el.user.id === session.user.id) ?? null;
