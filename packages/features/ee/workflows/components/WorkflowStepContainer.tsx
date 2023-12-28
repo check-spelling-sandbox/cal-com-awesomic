@@ -440,7 +440,7 @@ export default function WorkflowStepContainer(props: WorkflowStepProps) {
                         <div className="lg:flex">
                           <div className="lg:w-1/2">
                             <p className="font-medium">{t("example_1")}:</p>
-                            <p>{`${t("additonal_input_label")}: ${t("company_size")}`}</p>
+                            <p>{`${t("additional_input_label")}: ${t("company_size")}`}</p>
                             <p>{`${t("variable")}: {${t("company_size")
                               .replace(/[^a-zA-Z0-9 ]/g, "")
                               .trim()
@@ -449,7 +449,7 @@ export default function WorkflowStepContainer(props: WorkflowStepProps) {
                           </div>
                           <div className="mt-3 lg:mt-0 lg:w-1/2">
                             <p className="font-medium">{t("example_2")}:</p>
-                            <p>{`${t("additonal_input_label")}: ${t("what_help_needed")}`}</p>
+                            <p>{`${t("additional_input_label")}: ${t("what_help_needed")}`}</p>
                             <p>{`${t("variable")}: {${t("what_help_needed")
                               .replace(/[^a-zA-Z0-9 ]/g, "")
                               .trim()
