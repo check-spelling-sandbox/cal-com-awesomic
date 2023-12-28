@@ -9,7 +9,7 @@ import type { LocationType } from "@calcom/app-store/locations";
 export interface App {
   /**
    * @deprecated
-   * Wheter if the app is installed or not. Usually we check for api keys in env
+   * Whether if the app is installed or not. Usually we check for api keys in env
    * variables to determine if this is true or not.
    * */
   installed?: boolean;
@@ -44,16 +44,16 @@ export interface App {
   url: string;
   /** Optional documentation website URL */
   docsUrl?: string;
-  /** Wether if the app is verified by Cal.com or not */
+  /** Whether if the app is verified by Cal.com or not */
   verified: boolean;
-  /** Wether the app should appear in the trending section of the app store */
+  /** Whether the app should appear in the trending section of the app store */
   trending: boolean;
   /** Rating from 0 to 5, hardcoded for now. Should be fetched later on. */
   rating: number;
   /** Number of reviews, hardcoded for now. Should be fetched later on. */
   reviews: number;
   /**
-   *  Wheter if the app is installed globally or needs user intervention.
+   *  Whether if the app is installed globally or needs user intervention.
    * Used to show Connect/Disconnect buttons in App Store
    * */
   isGlobal?: boolean;
