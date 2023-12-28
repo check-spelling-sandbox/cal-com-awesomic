@@ -51,7 +51,7 @@ async function handler(req: NextApiRequest, res: NextApiResponse) {
     },
   });
 
-  return { message: "First admin user created successfuly." };
+  return { message: "First admin user created successfully." };
 }
 
 export default defaultHandler({
