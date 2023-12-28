@@ -1090,7 +1090,7 @@ const EventTypePage = (props: inferSSRProps<typeof getServerSideProps>) => {
                       <CollapsibleContent data-testid="advanced-settings-content" className="mt-4 space-y-6">
                         {/**
                          * Only display calendar selector if user has connected calendars AND if it's not
-                         * a team event. Since we don't have logic to handle each attende calendar (for now).
+                         * a team event. Since we don't have logic to handle each attendee calendar (for now).
                          * This will fallback to each user selected destination calendar.
                          */}
                         {!!connectedCalendarsQuery.data?.connectedCalendars.length && !team && (
