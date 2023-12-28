@@ -69,7 +69,7 @@ export default class ExchangeCalendarService implements Calendar {
       appointment.Start = DateTime.Parse(event.startTime); // moment string
       appointment.End = DateTime.Parse(event.endTime); // moment string
       appointment.Location = event.location || "Location not defined!";
-      appointment.Body = new MessageBody(event.description || ""); // you can not use any special character or escape the content
+      appointment.Body = new MessageBody(event.description || ""); // you cannot use any special character or escape the content
 
       for (let i = 0; i < event.attendees.length; i++) {
         appointment.RequiredAttendees.Add(new Attendee(event.attendees[i].email));
@@ -102,7 +102,7 @@ export default class ExchangeCalendarService implements Calendar {
       appointment.Start = DateTime.Parse(event.startTime); // moment string
       appointment.End = DateTime.Parse(event.endTime); // moment string
       appointment.Location = event.location || "Location not defined!";
-      appointment.Body = new MessageBody(event.description || ""); // you can not use any special character or escape the content
+      appointment.Body = new MessageBody(event.description || ""); // you cannot use any special character or escape the content
       for (let i = 0; i < event.attendees.length; i++) {
         appointment.RequiredAttendees.Add(new Attendee(event.attendees[i].email));
       }

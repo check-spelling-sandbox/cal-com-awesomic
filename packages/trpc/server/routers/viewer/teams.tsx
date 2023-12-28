@@ -182,7 +182,7 @@ export const viewerTeamsRouter = createProtectedRouter()
       if (ctx.user?.id === input.memberId)
         throw new TRPCError({
           code: "FORBIDDEN",
-          message: "You can not remove yourself from a team you own.",
+          message: "You cannot remove yourself from a team you own.",
         });
       await ctx.prisma.membership.delete({
         where: {
@@ -366,21 +366,21 @@ export const viewerTeamsRouter = createProtectedRouter()
       if (myMembership?.role === MembershipRole.ADMIN && targetMembership?.role === MembershipRole.OWNER) {
         throw new TRPCError({
           code: "FORBIDDEN",
-          message: "You can not change the role of an owner if you are an admin.",
+          message: "You cannot change the role of an owner if you are an admin.",
         });
       }
 
       if (!teamHasMoreThanOneOwner) {
         throw new TRPCError({
           code: "FORBIDDEN",
-          message: "You can not change the role of the only owner of a team.",
+          message: "You cannot change the role of the only owner of a team.",
         });
       }
 
       if (myMembership?.role === MembershipRole.ADMIN && input.memberId === ctx.user.id) {
         throw new TRPCError({
           code: "FORBIDDEN",
-          message: "You can not change yourself to a higher role.",
+          message: "You cannot change yourself to a higher role.",
         });
       }
 

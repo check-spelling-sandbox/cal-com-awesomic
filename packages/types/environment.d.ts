@@ -6,7 +6,7 @@ declare namespace NodeJS {
      *
      * Summary of terms:
      * - The codebase has to stay open source, whether it was modified or not
-     * - You can not repackage or sell the codebase
+     * - You cannot repackage or sell the codebase
      * - Acquire a commercial license to remove these terms by visiting: cal.com/sales
      **/
     readonly NEXT_PUBLIC_LICENSE_CONSENT: "agree" | undefined;

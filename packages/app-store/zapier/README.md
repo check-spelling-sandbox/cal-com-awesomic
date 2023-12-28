@@ -62,7 +62,7 @@ The invite link can be found under under Manage → Sharing.
 
 ## Localhost
 
-Localhost urls can not be used as the base URL for api endpoints
+Localhost urls cannot be used as the base URL for api endpoints
 
 Possible solution: using [https://ngrok.com/](https://ngrok.com/)
 

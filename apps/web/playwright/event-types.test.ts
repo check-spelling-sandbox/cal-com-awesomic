@@ -147,7 +147,7 @@ test.describe("Event Types tests", () => {
       expect(await $last.getAttribute("data-disabled")).toBe("1");
     });
 
-    test("can not add new event type", async ({ page }) => {
+    test("cannot add new event type", async ({ page }) => {
       await expect(page.locator("[data-testid=new-event-type]")).toBeDisabled();
     });
 
