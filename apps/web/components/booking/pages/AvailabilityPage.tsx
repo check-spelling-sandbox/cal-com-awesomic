@@ -83,7 +83,7 @@ const GoBackToPreviousPage = ({ t }: { t: TFunction }) => {
   const router = useRouter();
   const path = router.asPath.split("/");
   path.pop(); // Remove the last item (where we currently are)
-  path.shift(); // Removes first item e.g. if we were visitng "/teams/test/30mins" the array will new look like ["teams","test"]
+  path.shift(); // Removes first item e.g. if we were visiting "/teams/test/30mins" the array will new look like ["teams","test"]
   const slug = path.join("/");
   return (
     <div className="flex h-full flex-col justify-end">
