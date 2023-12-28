@@ -59,7 +59,7 @@ const TabItemProps = {
 //   </div>
 // );
 
-// IconNoInfoActive.paramaters = {
+// IconNoInfoActive.parameters = {
 //   nextRouter: {
 //     path: "/settings/[tab]",
 //     asPath: "/settings/events",

@@ -4,7 +4,7 @@ Storybook is home to all of our commonly used components. We use this app to vis
 
 All changes to storybook/ui must require a visual/code review.
 
-- Visual reviews happen on a tool called [Chormatic](http://chromatic.com/) and these reviews will happen by our product team.
+- Visual reviews happen on a tool called [Chromatic](http://chromatic.com/) and these reviews will happen by our product team.
 
 - Code reviews happen as normal on any changes to storybook/ui designs
 

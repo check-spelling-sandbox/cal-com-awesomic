@@ -69,7 +69,7 @@ export default class CloseCom {
     };
     return await fetch(url, { headers, body: JSON.stringify(data), ...rest }).then(async (response) => {
       if (!response.ok) {
-        const message = `An error has occured: ${response.status}`;
+        const message = `An error has occurred: ${response.status}`;
         throw new Error(message);
       }
       return await response.json();

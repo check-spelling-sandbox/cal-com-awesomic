@@ -50,7 +50,7 @@ function RoutingForm({ form, profile }: inferSSRProps<typeof getServerSideProps>
 
     if (!decidedAction) {
       // FIXME: Make sure that when a form is created, there is always a fallback route and then remove this.
-      alert("Define atleast 1 route");
+      alert("Define at least 1 route");
       return;
     }
 

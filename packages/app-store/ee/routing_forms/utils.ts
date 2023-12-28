@@ -13,7 +13,7 @@ export function getSerializableForm<TForm extends App_RoutingForms_Form>(form: T
     throw new Error("Error parsing fields");
   }
 
-  // Ideally we shouldb't have needed to explicitly type it but due to some reason it's not working reliably with VSCode TypeCheck
+  // Ideally we shouldn't have needed to explicitly type it but due to some reason it's not working reliably with VSCode TypeCheck
   const serializableForm: Omit<TForm, "fields" | "routes" | "createdAt" | "updatedAt"> & {
     fields: typeof fieldsParsed["data"];
     routes: typeof routesParsed["data"];

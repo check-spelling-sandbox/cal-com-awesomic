@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-test.describe("Change Passsword Test", () => {
+test.describe("Change Password Test", () => {
   // Using logged in state from globalSteup
   test.use({ storageState: "playwright/artifacts/proStorageState.json" });
 

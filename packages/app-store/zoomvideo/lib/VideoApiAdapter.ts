@@ -47,7 +47,7 @@ export const zoomMeetingsSchema = z.object({
 const zoomTokenSchema = z.object({
   scope: z.string().regex(new RegExp("meeting:write")),
   expiry_date: z.number(),
-  expires_in: z.number().optional(), // deprecated, purely for backwards compatibility; superseeded by expiry_date.
+  expires_in: z.number().optional(), // deprecated, purely for backwards compatibility; superseded by expiry_date.
   token_type: z.literal("bearer"),
   access_token: z.string(),
   refresh_token: z.string(),

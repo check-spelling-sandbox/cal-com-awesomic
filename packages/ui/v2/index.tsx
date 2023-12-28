@@ -16,7 +16,7 @@ export * from "./form/radio-area/";
 export { default as Select } from "./form/Select";
 export { default as Loader } from "./Loader";
 export * from "./navigation/tabs/";
-export { default as Notifcations } from "./notfications";
+export { default as Notifications } from "./notifications";
 export { default as PageHeader } from "./PageHeader";
 export * from "./skeleton";
 export { default as Switch } from "./Switch";

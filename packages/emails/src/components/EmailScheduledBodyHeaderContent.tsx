@@ -1,7 +1,7 @@
 import EmailCommonDivider from "./EmailCommonDivider";
 
 const EmailScheduledBodyHeaderContent = (props: { title: string; subtitle?: React.ReactNode }) => (
-  <EmailCommonDivider headStyles={{ padding: 0 }} mutipleRows>
+  <EmailCommonDivider headStyles={{ padding: 0 }} multipleRows>
     <tr>
       <td
         align="center"

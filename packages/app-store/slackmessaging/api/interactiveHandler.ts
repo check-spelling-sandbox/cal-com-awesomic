@@ -14,7 +14,7 @@ export default async function interactiveHandler(req: NextApiRequest, res: NextA
       case InteractionEvents.CREATE_EVENT:
         await createEvent(req, res);
       default:
-        return res.status(200).end(); // Techincally an invalid request but we don't want to return an throw an error to slack - 200 just does nothing
+        return res.status(200).end(); // Technically an invalid request but we don't want to return an throw an error to slack - 200 just does nothing
     }
   }
   return res.status(200).end(); // Send 200 if we dont have a case for the action_id

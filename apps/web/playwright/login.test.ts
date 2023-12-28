@@ -40,7 +40,7 @@ test.describe("Login and logout tests", () => {
   test("Should warn when user does not exist", async ({ page }) => {
     const alertMessage = (await localize("en"))("no_account_exists");
 
-    // Login with a non-existent user
+    // Login with a nonexistent user
     const never = "never";
     await login({ username: never }, page);
 

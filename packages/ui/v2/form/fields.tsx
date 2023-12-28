@@ -13,7 +13,7 @@ import {
 import classNames from "@calcom/lib/classNames";
 import { getErrorFromUnknown } from "@calcom/lib/errors";
 import { useLocale } from "@calcom/lib/hooks/useLocale";
-import showToast from "@calcom/ui/v2/notfications";
+import showToast from "@calcom/ui/v2/notifications";
 
 import { Alert } from "../Alert";
 

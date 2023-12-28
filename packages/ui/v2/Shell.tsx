@@ -27,7 +27,7 @@ import Dropdown, {
 } from "@calcom/ui/Dropdown";
 import { CollectionIcon, Icon } from "@calcom/ui/Icon";
 
-/* TODO: Migate this */
+/* TODO: Migrate this */
 import { HeadSeo } from "../../../apps/web/components/seo/head-seo";
 
 /* TODO: Get this from endpoint */

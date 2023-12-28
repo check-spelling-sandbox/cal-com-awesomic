@@ -1,4 +1,4 @@
-// This registers Typescript compiler instance onto node.js.
+// This registers TypeScript compiler instance onto node.js.
 // Now it is possible to just require typescript files without any compilation steps in the environment run by node
 require("ts-node").register();
 

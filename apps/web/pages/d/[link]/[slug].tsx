@@ -3,7 +3,7 @@ import { JSONObject } from "superjson/dist/types";
 import { z } from "zod";
 
 import { parseRecurringEvent } from "@calcom/lib";
-import { availiblityPageEventTypeSelect } from "@calcom/prisma";
+import { availabilityPageEventTypeSelect } from "@calcom/prisma";
 import prisma from "@calcom/prisma";
 
 import { getWorkingHours } from "@lib/availability";
@@ -39,7 +39,7 @@ export const getServerSideProps = async (context: GetServerSidePropsContext) => 
     select: {
       eventTypeId: true,
       eventType: {
-        select: availiblityPageEventTypeSelect,
+        select: availabilityPageEventTypeSelect,
       },
     },
   });

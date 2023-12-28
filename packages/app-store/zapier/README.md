@@ -58,11 +58,11 @@ Create the other two triggers (booking rescheduled, booking cancelled) exactly l
 
 ### Set ZAPIER_INVITE_LINK
 
-The invite link can be found under under Manage → Sharing.
+The invite link can be found under Manage → Sharing.
 
 ## Localhost
 
-Localhost urls can not be used as the base URL for api endpoints
+Localhost urls cannot be used as the base URL for api endpoints
 
 Possible solution: using [https://ngrok.com/](https://ngrok.com/)
 

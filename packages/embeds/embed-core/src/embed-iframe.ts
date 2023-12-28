@@ -145,7 +145,7 @@ export const useEmbedTheme = () => {
   return theme === "auto" ? null : theme;
 };
 
-// TODO: Make it usable as an attribute directly instead of styles value. It would allow us to go beyond styles e.g. for debugging we can add a special attribute indentifying the element on which UI config has been applied
+// TODO: Make it usable as an attribute directly instead of styles value. It would allow us to go beyond styles e.g. for debugging we can add a special attribute identifying the element on which UI config has been applied
 export const useEmbedStyles = (elementName: keyof EmbedStyles) => {
   const [styles, setStyles] = useState({} as EmbedStyles);
 
@@ -388,7 +388,7 @@ if (isBrowser) {
     });
 
     // This event should be fired whenever you want to let the content take automatic width which is available.
-    // Because on cal-iframe we set explicty width to make it look inline and part of page, there is never space available for content to automatically expand
+    // Because on cal-iframe we set explicitly width to make it look inline and part of page, there is never space available for content to automatically expand
     // This is a HACK to quickly tell iframe to go full width and let iframe content adapt to that and set new width.
     sdkActionManager?.on("__refreshWidth", () => {
       // sdkActionManager?.fire("__dimensionChanged", {

@@ -23,7 +23,7 @@ const PoweredByCal = () => {
           {
             // eslint-disable-next-line @next/next/no-img-element
             <img
-              className="relativ -mt-px hidden h-[10px] w-auto dark:inline"
+              className="relative -mt-px hidden h-[10px] w-auto dark:inline"
               src="/cal-logo-word-dark.svg"
               alt="Cal.com Logo"
             />

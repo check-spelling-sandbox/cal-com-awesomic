@@ -19,7 +19,7 @@ export default async function createEvent(req: NextApiRequest, res: NextApiRespo
     },
     response_url,
   } = JSON.parse(req.body.payload);
-  // This is a mess I have no idea why slack makes getting infomation this hard.
+  // This is a mess I have no idea why slack makes getting information this hard.
   const {
     eventName: {
       event_name: { value: selected_name },
@@ -94,7 +94,7 @@ export default async function createEvent(req: NextApiRequest, res: NextApiRespo
     email: foundUser?.email ?? "",
     name: foundUser?.username ?? "",
     guests: await Promise.all(invitedGuestsEmails),
-    location: "integrations:daily", // Defaulting to daily video to make this a bit more usefull than in-person
+    location: "integrations:daily", // Defaulting to daily video to make this a bit more useful than in-person
     timeZone: foundUser?.timeZone ?? "",
     language: foundUser?.locale ?? "en",
     customInputs: [{ label: "", value: "" }],

@@ -55,24 +55,24 @@ Customizable webhooks are a great way reduce the development effort and in many 
 
 ### Webhook structure
 
-| Variable            | Type     | Description                                                                            |
-| ------------------- | -------- | -------------------------------------------------------------------------------------- |
-| triggerEvent        | String   | The name of the trigger event [BOOKING_CREATED, BOOKING_RESHEDULED, BOOKING_CANCELLED] |
-| createdAt           | String   | The time of the webhook trigger                                                        |
-| type                | String   | The event-type slug                                                                    |
-| title               | String   | The event-type name                                                                    |
-| startTime           | String   | The event's start time                                                                 |
-| endTime             | String   | The event's end time                                                                   |
-| description?        | String   | The event's description as described in the event type                                 |
-| location?           | String   | Location of the event                                                                  |
-| organizer           | Person   | The organizer of the event                                                             |
-| attendees           | Person[] | The event booker & any guests                                                          |
-| uid?                | String   | The UID of the booking                                                                 |
-| resheduleUid?       | String   | The UID for the rescheduling                                                           |
-| cancellationReason? | String   | Reason for cancellation                                                                |
-| rejectionReason?    | String   | Reason for rejection                                                                   |
-| team?.name          | String   | Name of the team booked                                                                |
-| team?.members       | String[] | Members of the team booked                                                             |
+| Variable            | Type     | Description                                                                             |
+| ------------------- | -------- | --------------------------------------------------------------------------------------- |
+| triggerEvent        | String   | The name of the trigger event [BOOKING_CREATED, BOOKING_RESCHEDULED, BOOKING_CANCELLED] |
+| createdAt           | String   | The time of the webhook trigger                                                         |
+| type                | String   | The event-type slug                                                                     |
+| title               | String   | The event-type name                                                                     |
+| startTime           | String   | The event's start time                                                                  |
+| endTime             | String   | The event's end time                                                                    |
+| description?        | String   | The event's description as described in the event type                                  |
+| location?           | String   | Location of the event                                                                   |
+| organizer           | Person   | The organizer of the event                                                              |
+| attendees           | Person[] | The event booker & any guests                                                           |
+| uid?                | String   | The UID of the booking                                                                  |
+| rescheduleUid?      | String   | The UID for the rescheduling                                                            |
+| cancellationReason? | String   | Reason for cancellation                                                                 |
+| rejectionReason?    | String   | Reason for rejection                                                                    |
+| team?.name          | String   | Name of the team booked                                                                 |
+| team?.members       | String[] | Members of the team booked                                                              |
 
 ### Person structure
 

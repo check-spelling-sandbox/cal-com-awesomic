@@ -23,11 +23,11 @@ export const requestSnippets = {
   languages: ["node", "curl_bash"],
 };
 // Since swagger-ui-react was not configured to change the request snippets some workarounds required
-// configuration will be added programatically
+// configuration will be added programmatically
 // Custom Plugin
 export const SnippedGenerator = {
   statePlugins: {
-    // extend some internals to gain information about current path, method and spec in the generator function metioned later
+    // extend some internals to gain information about current path, method and spec in the generator function mentioned later
     spec: {
       wrapSelectors: {
         requestFor: (ori, system) => (state, path, method) => {
@@ -76,7 +76,7 @@ export const SnippedGenerator = {
               //             path,
               //             method,
               //             targets
-              //             // Since I don't know why hostname was undefinedundefined, I harcoded it here
+              //             // Since I don't know why hostname was undefined, I hardcoded it here
               //           ).snippets[0].content;
               //         } catch (err) {
               //           // set to error in case it happens the npm package has some flaws

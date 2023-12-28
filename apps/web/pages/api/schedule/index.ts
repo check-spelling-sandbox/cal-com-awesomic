@@ -27,7 +27,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         },
         data: {
           availability: {
-            /* We delete user availabilty */
+            /* We delete user availability */
             deleteMany: {
               userId: {
                 equals: userId,
