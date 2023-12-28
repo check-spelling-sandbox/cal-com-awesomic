@@ -9,7 +9,7 @@ import { Tooltip } from "./Tooltip";
 export type ButtonBaseProps = {
   /* Primary: Signals most important actions at any given point in the application.
        Secondary: Gives visual weight to actions that are important
-       Minimal: Used for actions that we want to give very little significane to */
+       Minimal: Used for actions that we want to give very little significance to */
   color?: keyof typeof variantClassName;
   /**Default: H = 36px (default)
        Large: H = 38px (Onboarding, modals)
