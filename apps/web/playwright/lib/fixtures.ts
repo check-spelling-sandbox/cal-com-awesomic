@@ -23,7 +23,7 @@ export const test = base.extend<Fixtures>({
     await use(bookingsFixture);
   },
   payments: async ({ page }, use) => {
-    const payemntsFixture = createPaymentsFixture(page);
-    await use(payemntsFixture);
+    const paymentsFixture = createPaymentsFixture(page);
+    await use(paymentsFixture);
   },
 });
