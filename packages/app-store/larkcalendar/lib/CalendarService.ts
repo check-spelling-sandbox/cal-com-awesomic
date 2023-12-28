@@ -204,7 +204,7 @@ export default class LarkCalendarService implements Calendar {
     }
 
     try {
-      // Since attendees cannot be changed any more, updateAttendees is not needed
+      // Since attendees cannot be changed anymore, updateAttendees is not needed
       // await this.updateAttendees(event, eventId);
       return {
         ...eventRespData,
