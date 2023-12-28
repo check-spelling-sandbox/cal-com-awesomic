@@ -434,7 +434,7 @@ const loggedInViewerRouter = createProtectedRouter()
 
       // Remove duplicate recurring bookings for upcoming status.
       // Couldn't use distinct in query because the distinct column would be different for recurring and non recurring event.
-      // We might be actually sending less then the limit, due to this filter
+      // We might be actually sending less than the limit, due to this filter
       // TODO: Figure out a way to fix it.
       if (bookingListingByStatus === "upcoming") {
         bookings = bookings.filter((booking) => {
