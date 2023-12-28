@@ -57,7 +57,7 @@ export function Card({
       <p className="pt-1 text-sm font-normal leading-[18px] text-gray-500">{description}</p>
       {variant === "AppStore" && (
         <Button color="secondary" href={actionButton?.href} size="lg" className="mt-10 w-full">
-          {/* Force it to be centered as this usecase of a button is off - doesnt meet normal sizes */}
+          {/* Force it to be centered as this use case of a button is off - doesnt meet normal sizes */}
           <div className="mx-auto">{actionButton?.child}</div>
         </Button>
       )}
