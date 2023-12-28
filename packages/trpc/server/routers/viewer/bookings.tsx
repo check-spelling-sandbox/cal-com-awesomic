@@ -66,7 +66,7 @@ export const bookingsRouter = createProtectedRouter()
     return next({ ctx: { ...ctx, booking } });
   })
   .middleware(async ({ ctx, next }) => {
-    // So TS doesn't compain in the previous middleware.
+    // So TS doesn't complain in the previous middleware.
     // This means the user doesn't have access to this booking
     if (!ctx.booking) throw new TRPCError({ code: "UNAUTHORIZED" });
     // Booking here is non-nullable anymore
